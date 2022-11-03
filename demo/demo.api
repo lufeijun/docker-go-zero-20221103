@@ -1,0 +1,13 @@
+type Request {
+}
+
+type Response {
+	Status  int8        `json:"status"`
+	Message string      `json:"message"`
+	Values  interface{} `json:"values"`
+}
+
+service demo-api {
+	@handler Hello
+	get /hello returns (Response)
+}
