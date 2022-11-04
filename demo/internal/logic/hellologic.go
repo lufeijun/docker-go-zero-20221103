@@ -2,8 +2,8 @@ package logic
 
 import (
 	"context"
+	"time"
 
-	"docker-go-zero/common"
 	"docker-go-zero/demo/internal/svc"
 	"docker-go-zero/demo/internal/types"
 
@@ -28,9 +28,9 @@ func (l *HelloLogic) Hello() (resp *types.Response, err error) {
 	// todo: add your logic here and delete this line
 	resp = new(types.Response)
 	resp.Message = "success"
-	resp.Values = "开始了"
+	resp.Values = "开始了" + time.Now().Format("2006-01-02 15:04:05")
 
-	common.Hello()
+	// common.Hello()
 
 	return
 }
