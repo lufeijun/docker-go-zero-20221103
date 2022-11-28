@@ -10,4 +10,8 @@ type Response {
 service demo-api {
 	@handler Hello
 	get /hello returns (Response)
+	
+	@handler Version
+	get /version returns (Response)
+	
 }
