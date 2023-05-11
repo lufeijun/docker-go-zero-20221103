@@ -17,4 +17,7 @@ service demo-api {
 	@handler Delay
 	get /delay returns (Response)
 	
+	@handler Os
+	get /Os returns (Response)
+	
 }

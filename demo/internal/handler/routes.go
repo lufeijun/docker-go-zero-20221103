@@ -27,6 +27,11 @@ func RegisterHandlers(server *rest.Server, serverCtx *svc.ServiceContext) {
 				Path:    "/delay",
 				Handler: DelayHandler(serverCtx),
 			},
+			{
+				Method:  http.MethodGet,
+				Path:    "/os",
+				Handler: OsHandler(serverCtx),
+			},
 		},
 	)
 }
