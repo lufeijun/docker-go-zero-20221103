@@ -8,3 +8,5 @@ Log:
   TimeFormat: "2006-01-02 15:04:05:00"
   KeepDays: 3
   Compress: true
+
+Timeout: 20000

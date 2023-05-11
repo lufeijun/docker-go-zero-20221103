@@ -14,4 +14,7 @@ service demo-api {
 	@handler Version
 	get /version returns (Response)
 	
+	@handler Delay
+	get /delay returns (Response)
+	
 }
