@@ -20,4 +20,7 @@ service demo-api {
 	@handler Os
 	get /Os returns (Response)
 	
+	@handler Env
+	get /env returns (Response)
+	
 }

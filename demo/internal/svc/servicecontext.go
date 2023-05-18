@@ -11,5 +11,6 @@ type ServiceContext struct {
 func NewServiceContext(c config.Config) *ServiceContext {
 	return &ServiceContext{
 		Config: c,
+		// Service: ,
 	}
 }
